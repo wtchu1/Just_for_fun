@@ -1,7 +1,13 @@
 #!/bin/bash
+# Script grabs the images that show up on the Windows 10 lockscreen
+# designed to be run in Linux Subsystem for Windows 10
 
+#---- Adjust the paths below for your system ----
+#   Directory where the lock screen images are stored
 lock_pic_dir="/mnt/c/Users/wc11/AppData/Local/Packages/Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy/LocalState/Assets"
+#   Directory where to put the copied images
 tmp_dir="/mnt/c/Users/wc11/Pictures/Desktop_Backgrounds/tmp_dir"
+#------------------------------------------------
 
 echo "lockscreen dir: $lock_pic_dir"
 echo "tmp_dir: $tmp_dir"
